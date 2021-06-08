@@ -1,11 +1,6 @@
 language: python
 python:
- - "2.7"
- - "3.6"
-env:
- - NUMPY_VERSION=1.12.1
- - NUMPY_VERSION=1.13.1
-install:
- - pip install -r requirements.txt numpy==$NUMPY_VERSION
- script:
- - pytest
+  - "2.7"
+  - "3.6"
+script:
+  - pytest
